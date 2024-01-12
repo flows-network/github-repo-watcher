@@ -11,13 +11,14 @@ use std::{ collections::{ HashMap }, env };
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn on_deploy() {
-    // schedule_cron_job(String::from("0 11 * * *"), String::from("cron_job_evoked")).await;
+    schedule_cron_job(String::from("30 15 * * *"), String::from("cron_job_evoked")).await;
 
-    let now = Utc::now();
+  / let now = Utc::now();
     let now_minute = now.minute() + 2;
     let cron_time = format!("{:02} {:02} {:02} * *", now_minute, now.hour(), now.day());
-    schedule_cron_job(cron_time, String::from("cron_job_evoked")).await;
+    schedule_cron_job(cron_time, String::from("cron_job_evoked")).await; /
 }
+
 
 #[schedule_handler]
 async fn handler(body: Vec<u8>) {

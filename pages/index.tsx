@@ -60,10 +60,10 @@ export default function Index() {
             <div id="header" className="sticky bg-white top-0 flex justify-between items-center pt-4 px-7">
                 <img className="h-14" src="/logo-with-text.png"/>
                 <div className="flex">
-                    <a href="https://twitter.com/flows_network">
+                    <a target="_blank" href="https://twitter.com/flows_network">
                         <img alt="twitter" className="w-12 mr-6" src="/twitter.png"/>
                     </a>
-                    <a href="https://discord.gg/TrPfq677au">
+                    <a target="_blank" href="https://discord.gg/TrPfq677au">
                         <img alt="discord" className="w-12 mr-6" src="/discord.png"/>
                     </a>
                 </div>

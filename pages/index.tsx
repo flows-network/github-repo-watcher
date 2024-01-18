@@ -5,7 +5,7 @@ import rehypeRaw from 'rehype-raw'
 import "github-markdown-css/github-markdown-light.css"
 import Button from "/components/Button";
 
-export default function index() {
+export default function Index() {
 
     const [url, setUrl] = useState<String>("");
     const [token, setToken] = useState<String>("");

@@ -1,3 +1,4 @@
+// @ts-ignore
 export default async function (req, res) {
     const {url,token} = req.body;
     const response = await fetch(`https://code.flows.network/webhook/vIognrnNfVdQSlIRIyIM?owner_repo=${url}&token=${token}`)

@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mdTable table{
+    display: table!important;
+}
+
+.mdTable thead{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px solid #d0d7de;
+}
+
+.default {
+    border-width: 1px;
+    color: #9955ff;
+    border-color: #9955ff;
+    box-shadow: 0 2px #00000004;
+    transition: .3s;
+}
+
+.default::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    box-shadow: 0 0 0 8px #9955ff;
+    transition: .3s;
+}
+
+.default:hover {
+    color: #b17fff;
+    border-color: #b17fff;
+}
+
+.default:active {
+    color: #7634d9;
+    border-color: #7634d9;
+}
+
+.default:active::after {
+    box-shadow: none;
+    opacity: 0.4;
+    transition: 0s; /*取消过渡*/
+}
+
+.danger {
+    border-width: 1px;
+    color: #FF4D4F;
+    border-color: #FF4D4F;
+    box-shadow: 0 2px #00000004;
+    transition: .3s;
+}
+
+.danger::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    box-shadow: 0 0 0 8px #FF4D4F;
+    transition: .3s;
+}
+
+.danger:hover {
+    color: #ff7374;
+    border-color: #ff7374;
+}
+
+.danger:active {
+    color: #de2224;
+    border-color: #de2224;
+}
+
+.danger:active::after {
+    box-shadow: none;
+    opacity: 0.4;
+    transition: 0s; /*取消过渡*/
+}
+
+.normal {
+    border-width: 1px;
+    color: black;
+    border-color: #E4E4E4;
+    box-shadow: 0 2px #00000004;
+    transition: .3s;
+}
+
+.normal::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    box-shadow: 0 0 0 8px #9955ff;
+    transition: .3s;
+}
+
+.normal:hover {
+    color: #b17fff;
+    border-color: #b17fff;
+}
+
+.normal:active {
+    color: #7634d9;
+    border-color: #7634d9;
+}
+
+.normal:active::after {
+    box-shadow: none;
+    opacity: 0.4;
+    transition: 0s; /*取消过渡*/
+}
+
+.warn {
+    background-color: #FF4D4F;
+    color: white;
+    box-shadow: 0 2px #00000004;
+    transition: .3s;
+}
+
+.warn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    box-shadow: 0 0 0 6px #FF4D4F;
+    transition: .3s;
+}
+
+.warn:hover {
+    background-color: #ff7374;
+    color: white;
+}
+
+.warn:active {
+    background-color: #de2224;
+    color: white;
+}
+
+.warn:active::after {
+    box-shadow: none;
+    opacity: 0.4;
+    transition: 0s; /*取消过渡*/
+}
+
+.primary {
+    background-color: #9955ff;
+    color: white;
+    box-shadow: 0 2px #00000004;
+    transition: .3s;
+}
+
+.primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    box-shadow: 0 0 0 6px #9955ff;
+    transition: .3s;
+}
+
+.primary:hover {
+    background-color: #b17fff;
+    color: white;
+}
+
+.primary:active {
+    background-color: #7634d9;
+    color: white;
+}
+
+.primary:active::after {
+    box-shadow: none;
+    opacity: 0.4;
+    transition: 0s; /*取消过渡*/
+}

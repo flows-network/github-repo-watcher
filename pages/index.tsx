@@ -58,13 +58,13 @@ export default function Index() {
     return (
         <div>
             <div id="header" className="sticky bg-white top-0 flex justify-between items-center pt-4 px-7">
-                <img className="h-14" src="/logo-with-text.png"/>
+                <img className="h-14" src="logo-with-text.png"/>
                 <div className="flex">
                     <a target="_blank" href="https://twitter.com/flows_network">
-                        <img alt="twitter" className="w-12 mr-6" src="/twitter.png"/>
+                        <img alt="twitter" className="w-12 mr-6" src="twitter.png"/>
                     </a>
                     <a target="_blank" href="https://discord.gg/TrPfq677au">
-                        <img alt="discord" className="w-12 mr-6" src="/discord.png"/>
+                        <img alt="discord" className="w-12 mr-6" src="discord.png"/>
                     </a>
                 </div>
             </div>
@@ -94,7 +94,7 @@ export default function Index() {
                     </div>
                     <div className="flex justify-end">
                         <Button className="py-4 px-12 mt-3" type="primary" onClick={downloadCsv}>
-                            <img src="/download.svg"/>
+                            <img src="download.svg"/>
                         </Button>
                     </div>
                 </div>

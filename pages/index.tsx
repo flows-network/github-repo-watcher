@@ -87,8 +87,7 @@ export default function Index() {
                                                            href="https://flows.network/">flows.network</a></div>
                 <div className={"max-w-full " + (mdData ? "block" : "hidden")}>
                     <div className="mdTable markdown-body max-w-full max-h-96 overflow-auto">
-                        <ReactMarkdown rehypePlugins={[rehypeRaw]}
-                                       remarkPlugins={[remarkGfm]}>
+                        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
                             {mdData}
                         </ReactMarkdown>
                     </div>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-lottie": "^1.2.10",
     "github-markdown-css": "^5.5.0",
     "next": "^14.0.4",
     "react": "^18",

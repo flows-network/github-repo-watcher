@@ -75,7 +75,10 @@ export default function index() {
                 <input onChange={(e) => {
                     setToken(e.target.value)
                 }} className="rounded border border-black py-4 px-6 mt-6 w-3/4" placeholder="Enter GitHub token"/>
-                <a target="_blank" href="https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" className="text-sm mt-2 w-3/4 text-start hover:underline hover:pointer">How to get the github token?</a>
+                <a target="_blank"
+                   href="https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+                   className="text-sm mt-2 w-3/4 text-start hover:underline hover:pointer">How to get the github
+                    token?</a>
                 <div className="mt-6">
                     <Button className="h-12 px-10" disabled={!url || !token} type="primary" text="Submit"
                             onClick={submit}/>

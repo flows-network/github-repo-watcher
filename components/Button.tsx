@@ -19,7 +19,7 @@ export default function Button(props: ButtonProps) {
     const [buttonState, setButtonState] = useState(true)
     const [loadingState, setLoadingState] = useState(false)
 
-    const buttonFunc = async (e) => {
+    const buttonFunc = async (e: React.MouseEvent<HTMLButtonElement>) => {
         setButtonState(false)
         setLoadingState(true)
         try {
@@ -38,7 +38,7 @@ export default function Button(props: ButtonProps) {
             onClick={(e) => disabled ? {} : (buttonState ? buttonFunc(e) : {})}>
             {loadingState || loading ?
                 <Lottie width={size === "small" ? "1rem" : "2rem"}
-                                height={size === "small" ? "1rem" : "2rem"} options={{
+                        height={size === "small" ? "1rem" : "2rem"} options={{
                     loop: true,
                     autoplay: true,
                     rendererSettings: {preserveAspectRatio: 'xMidYMid slice'},

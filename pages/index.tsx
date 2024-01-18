@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import "github-markdown-css/github-markdown-light.css"
-import Button from "../components/Button.tsx";
+import Button from "components/Button.tsx";
 
 export default function Index() {
 

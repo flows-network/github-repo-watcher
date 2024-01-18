@@ -11,7 +11,7 @@ export default function Document() {
                     href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800"
                     rel="stylesheet"
                 />
-                <meta name="google-site-verification" content="2Y6wUPzRh4Dz8-Eq23crRhLnt0KvcRKAcTi1ZvHnBKg" />
+                <meta name="google-site-verification" content="2Y6wUPzRh4Dz8-Eq23crRhLnt0KvcRKAcTi1ZvHnBKg"/>
             </Head>
             <body>
             <Main/>

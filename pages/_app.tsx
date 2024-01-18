@@ -1,15 +1,15 @@
 import './app.css'
 import React from "react";
 import {useRouter} from "next/router";
-import { NextPage } from 'next';
-import { AppProps } from 'next/app';
+import {NextPage} from 'next';
+import {AppProps} from 'next/app';
 import Script from "next/script.js";
 
 interface Props extends AppProps {
     Component: NextPage;
 }
 
-export default function MyApp({ Component, pageProps }: Props) {
+export default function MyApp({Component, pageProps}: Props) {
     const router = useRouter()
 
     return (

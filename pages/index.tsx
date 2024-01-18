@@ -87,8 +87,10 @@ export default function Index() {
                                                            href="https://flows.network/">flows.network</a></div>
                 <div className={"max-w-full " + (mdData ? "block" : "hidden")}>
                     <div className="mdTable markdown-body max-w-full max-h-96 overflow-auto">
-                        <ReactMarkdown children={mdData} rehypePlugins={[rehypeRaw]}
-                                       remarkPlugins={[remarkGfm]}/>
+                        <ReactMarkdown rehypePlugins={[rehypeRaw]}
+                                       remarkPlugins={[remarkGfm]}>
+                            {mdData}
+                        </ReactMarkdown>
                     </div>
                     <div className="flex justify-end">
                         <Button className="py-4 px-12 mt-3" type="primary" onClick={downloadCsv}>

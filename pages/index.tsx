@@ -3,13 +3,14 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import "github-markdown-css/github-markdown-light.css"
-import Button from "components/Button.tsx";
+// @ts-ignore
+import Button from "/components/Button";
 
 export default function Index() {
 
-    const [url, setUrl] = useState<String>("");
-    const [token, setToken] = useState<String>("");
-    const [mdData, setMdData] = useState<String>("");
+    const [url, setUrl] = useState<string>("");
+    const [token, setToken] = useState<string>("");
+    const [mdData, setMdData] = useState<string>("");
 
     const submit = async () => {
         let urlList = url.split("/")
@@ -36,7 +37,7 @@ export default function Index() {
 
     const downloadCsv = async () => {
         const rows = mdData.split('\n');
-        let csv = []
+        let csv:String[] = []
         rows.forEach(row => {
             let cols = row.trim().split('|');
             cols = cols.slice(1, cols.length - 1);

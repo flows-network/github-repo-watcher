@@ -7,6 +7,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
+                <title>github status</title>
                 <link
                     href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800"
                     rel="stylesheet"

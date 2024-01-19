@@ -19,16 +19,8 @@ export default function Index() {
             const formatData = lastTwo[0] + "/" + lastTwo[1]
             console.log(formatData)
             setMdData("")
-            const response = await fetch(`/api/_getRepoWatcher`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    url: formatData, token
-                })
-            });
-            const data = await response.json();
+            const response = await fetch(`https://code.flows.network/webhook/uSeJdpccwA757cnosXs7?owner_repo=${formatData}`, {});
+            const data = await response.text();
             setMdData(data);
         } else {
             alert("you input url have some error! Please check~")
